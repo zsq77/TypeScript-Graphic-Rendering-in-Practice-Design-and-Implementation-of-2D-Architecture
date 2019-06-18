@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var Canvas2D = /** @class */ (function () {
     // public访问级别的构造函数
     function Canvas2D(canvas) {
@@ -37,4 +35,4 @@ var Canvas2D = /** @class */ (function () {
     };
     return Canvas2D;
 }());
-exports.Canvas2D = Canvas2D;
+export { Canvas2D };

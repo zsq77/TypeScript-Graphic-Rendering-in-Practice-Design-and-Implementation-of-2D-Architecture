@@ -1,0 +1,15 @@
+{
+    "name": "modularDevelopment",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "dev": "lite-server"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.5.3"
+    }
+}
