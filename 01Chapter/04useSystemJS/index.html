@@ -9,10 +9,29 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Hello World</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/typescript/lib/typescript.js"></script>
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            //使用TypeScript进行转译
+            packages: {
+                '/': {
+                    defaultExtension: 'ts'
+                        //转译当前目录（/）下的所有ts文件，如果不设定defaultExtension，
+                        //程序无法正确运行
+
+                }
+            }
+        });
+        System.import('./main.ts'). //入口文件
+        then(null, console.error.bind(console));
+        //如果出现错误，转发到浏览器的console中显示错误信息
+    </script>
 </head>
 
 <body>
@@ -23,7 +42,6 @@
     <body>
         <canvas id="canvas" width="800" height="600"></canvas>
     </body>
-    <script src="./main.js" type="module" async defer></script>
 </body>
 
 </html>

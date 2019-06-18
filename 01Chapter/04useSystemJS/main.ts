@@ -1,4 +1,4 @@
-import { Canvas2D } from "./canvas2D/Canvas2D.js";
+import { Canvas2D } from "./canvas2D/Canvas2D";
 
 let canvas: HTMLCanvasElement | null = document.getElementById('canvas') as HTMLCanvasElement;
 if (canvas === null) {
@@ -6,4 +6,4 @@ if (canvas === null) {
     throw new Error("无法获取HTMLCanvasElement !!! ");
 }
 let canvas2D = new Canvas2D(canvas);
-canvas2D.drawText("SystemJS");
+canvas2D.drawText("SystemJS ComeOn");
