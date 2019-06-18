@@ -1,4 +1,4 @@
-export class Canvas2D {
+class Canvas2D {
     //声明public访问级别的成员变量
     public context: CanvasRenderingContext2D | null;
 
@@ -44,3 +44,5 @@ export class Canvas2D {
         this.context.restore();
     }
 }
+
+export const Canvas2DUtil = Canvas2D;

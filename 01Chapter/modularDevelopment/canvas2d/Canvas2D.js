@@ -35,4 +35,4 @@ var Canvas2D = /** @class */ (function () {
     };
     return Canvas2D;
 }());
-export { Canvas2D };
+export var Canvas2DUtil = Canvas2D;
