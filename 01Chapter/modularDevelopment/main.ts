@@ -1,4 +1,4 @@
-import { Canvas2D } from "./canvas2d/Canvas2D";
+import { Canvas2D } from "./canvas2d/Canvas2D.js";
 // 调用Canvas2DUtil类，绘制居中对齐的文字
 let canvas: HTMLCanvasElement | null = document.getElementById('canvas') as HTMLCanvasElement;
 if (canvas === null) {
